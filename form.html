@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>PHPのテスト</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+</HEAD>
+<BODY bgcolor="#FFFFFF" text="#000000">
+<FONT size="4">PHPのテスト</FONT> 
+<HR size="1" noshade>
+新規登録画面
+<HR size="1" noshade>
+[ <a href="list.php">戻る</a>]<BR> 
+<FORM method="post" action="list.php">
+ <div>掲示板</div>
+ <input type="hidden" name="ie" value="charset=utf-8">
+ 名前：<input type="text" name="name"><br>
+ 件名：<input type="text" name="title"><br>
+画像：<input type="text" name="gazou"><br>
+ 添付：<input type="file" name="temp"><br>
+時代:
+<SELECT size="10" name="jidai">
+ <OPTION value="飛鳥">飛鳥</OPTION>
+ <OPTION value="奈良">奈良</OPTION>
+ <OPTION value="平安">平安</OPTION>
+ <OPTION value="鎌倉">鎌倉</OPTION>
+ <OPTION value="室町">室町</OPTION>
+ <OPTION value="安土桃山">安土桃山</OPTION>
+ <OPTION value="江戸">江戸</OPTION>
+ </SELECT><br>
+ 都道府県:
+<SELECT size="10" name="ken">
+ <OPTION value="奈良">奈良県</OPTION>
+ <OPTION value="京都">京都府</OPTION>
+ <OPTION value="滋賀">滋賀県</OPTION>
+ <OPTION value="大阪">大阪府</OPTION>
+ <OPTION value="兵庫">兵庫県</OPTION>
+ <OPTION value="和歌山">和歌山県</OPTION>
+ <OPTION value="岡山">岡山県</OPTION>
+ </SELECT><br>
+ ランク:
+<SELECT size="1" name="rank">
+ <OPTION value="1">1</OPTION>
+ <OPTION value="2">2</OPTION>
+ <OPTION value="3">3</OPTION>
+ <OPTION value="4">4</OPTION>
+ <OPTION value="5">5</OPTION>
+ </SELECT><br>
+ 内容：<textarea cols=38 rows="7" name="coment">
+ </textarea><br>
+<INPUT type="hidden" name="action" value="insert">
+ <input type="submit" value="書き込む">
+ <input type="reset" value="リセット">
+ </FORM> 
+</BODY>
+</HTML>
